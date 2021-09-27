@@ -2,8 +2,9 @@ class careersaarthi{
 
   static renderPackages(parent , arr){
     function extractData(item){
-      if(item === "Career Planning Package"){
+      if(item === "cpp"){
         let obj = {
+          name:"Career Planning Package",
           avatar:"https://www.careersaarthi.com/wp-content/uploads/2021/07/cpp.png",
           description:
           `
@@ -14,8 +15,9 @@ class careersaarthi{
         }
         return obj;
       }
-      else if(item === "India Complete Package"){
+      else if(item === "icp"){
         let obj = {
+          name:"India Complete Package",
           avatar:"https://www.careersaarthi.com/wp-content/uploads/2021/07/india.png",
           description:
           `
@@ -27,8 +29,9 @@ class careersaarthi{
         }
         return obj;
       }
-      else if(item === "International Complete Package"){
+      else if(item === "intcp"){
         let obj = {
+          name:"International Complete Package",
           avatar:"https://www.careersaarthi.com/wp-content/uploads/2021/07/international.png",
           description:
           `
@@ -40,8 +43,9 @@ class careersaarthi{
         }
         return obj;
       }
-      else if(item === "Career Planning for Professionals"){
+      else if(item === "cpro"){
         let obj = {
+          name:"Career Planning for Professionals",
           avatar:"https://www.careersaarthi.com/wp-content/uploads/2021/07/worker.png",
           description:
           `
@@ -64,7 +68,7 @@ class careersaarthi{
       parent.innerHTML += `
       <div class="container-cs">
       <img class="icon" src="${parsedItem.avatar}" width="280" height="280" alt="ccp" title="cpp">
-        <h3 class="container-heading">${item}</h3>
+        <h3 class="container-heading">${parsedItem.name}</h3>
         <p>
         ${parsedItem.description}
         </p>
